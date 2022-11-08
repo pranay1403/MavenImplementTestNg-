@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="16" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-08T10:46:59 IST" name="Suite" finished-at="2022-11-08T10:48:43 IST" duration-ms="103208">
+    <groups>
+      <group name="sanity testing">
+        <method signature="LogIn.getsingpageTitle()[pri:5, instance:Leetcode.LogIn@18078bef]" name="getsingpageTitle" class="Leetcode.LogIn"/>
+        <method signature="LogIn.getsingpageTitle()[pri:5, instance:Leetcode.LogIn@2d1ef81a]" name="getsingpageTitle" class="Leetcode.LogIn"/>
+        <method signature="LogIn.getsingpageTitle()[pri:5, instance:Leetcode.LogIn@815b41f]" name="getsingpageTitle" class="Leetcode.LogIn"/>
+        <method signature="LogIn.getsingpageTitle()[pri:5, instance:Leetcode.LogIn@2f4948e4]" name="getsingpageTitle" class="Leetcode.LogIn"/>
+      </group> <!-- sanity testing -->
+    </groups>
+    <test started-at="2022-11-08T10:46:59 IST" name="Test" finished-at="2022-11-08T10:47:26 IST" duration-ms="27094">
+      <class name="Leetcode.LogIn">
+        <test-method is-config="true" signature="browserStartup(java.lang.String)[pri:0, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:46:59 IST" name="browserStartup" finished-at="2022-11-08T10:47:10 IST" duration-ms="10190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStartup -->
+        <test-method signature="HomePage()[pri:1, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:10 IST" name="HomePage" finished-at="2022-11-08T10:47:17 IST" duration-ms="7720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method signature="verifyUsername(java.lang.String)[pri:2, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:17 IST" name="verifyUsername" description="Username test case" finished-at="2022-11-08T10:47:18 IST" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pranaygaikwadpatil@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsername -->
+        <test-method signature="verifyPassword(java.lang.String)[pri:3, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:18 IST" name="verifyPassword" finished-at="2022-11-08T10:47:18 IST" depends-on-methods="Leetcode.LogIn.verifyUsername" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranay@8988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassword -->
+        <test-method signature="SignIn()[pri:4, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:18 IST" name="SignIn" finished-at="2022-11-08T10:47:23 IST" depends-on-methods="Leetcode.LogIn.verifyPassword" duration-ms="5190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method signature="getsingpageTitle()[pri:5, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:23 IST" name="getsingpageTitle" finished-at="2022-11-08T10:47:23 IST" depends-on-methods="Leetcode.LogIn.SignIn" duration-ms="19" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [(3) LeetCode - The World's Leading Online Programming Learning Platform] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [(3) LeetCode - The World's Leading Online Programming Learning Platform] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Leetcode.LogIn.getsingpageTitle(LogIn.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsingpageTitle -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:Leetcode.LogIn@18078bef]" started-at="2022-11-08T10:47:23 IST" name="tearUp" finished-at="2022-11-08T10:47:26 IST" duration-ms="3252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- Leetcode.LogIn -->
+    </test> <!-- Test -->
+    <test started-at="2022-11-08T10:47:27 IST" name="Test2" finished-at="2022-11-08T10:47:54 IST" duration-ms="27611">
+      <class name="Leetcode.LogIn">
+        <test-method is-config="true" signature="browserStartup(java.lang.String)[pri:0, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:27 IST" name="browserStartup" finished-at="2022-11-08T10:47:37 IST" duration-ms="10116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStartup -->
+        <test-method signature="HomePage()[pri:1, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:37 IST" name="HomePage" finished-at="2022-11-08T10:47:45 IST" duration-ms="8127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method signature="verifyUsername(java.lang.String)[pri:2, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:45 IST" name="verifyUsername" description="Username test case" finished-at="2022-11-08T10:47:45 IST" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pranaygaikwadpatil@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsername -->
+        <test-method signature="verifyPassword(java.lang.String)[pri:3, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:45 IST" name="verifyPassword" finished-at="2022-11-08T10:47:45 IST" depends-on-methods="Leetcode.LogIn.verifyUsername" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranay@8988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassword -->
+        <test-method signature="SignIn()[pri:4, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:45 IST" name="SignIn" finished-at="2022-11-08T10:47:50 IST" depends-on-methods="Leetcode.LogIn.verifyPassword" duration-ms="5092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method signature="getsingpageTitle()[pri:5, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:50 IST" name="getsingpageTitle" finished-at="2022-11-08T10:47:50 IST" depends-on-methods="Leetcode.LogIn.SignIn" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [(3) LeetCode - The World's Leading Online Programming Learning Platform] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [(3) LeetCode - The World's Leading Online Programming Learning Platform] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Leetcode.LogIn.getsingpageTitle(LogIn.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsingpageTitle -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:Leetcode.LogIn@2d1ef81a]" started-at="2022-11-08T10:47:51 IST" name="tearUp" finished-at="2022-11-08T10:47:54 IST" duration-ms="3545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- Leetcode.LogIn -->
+    </test> <!-- Test2 -->
+    <test started-at="2022-11-08T10:47:54 IST" name="Test3" finished-at="2022-11-08T10:48:18 IST" duration-ms="24068">
+      <class name="Leetcode.LogIn">
+        <test-method is-config="true" signature="browserStartup(java.lang.String)[pri:0, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:47:54 IST" name="browserStartup" finished-at="2022-11-08T10:48:02 IST" duration-ms="7483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStartup -->
+        <test-method signature="HomePage()[pri:1, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:02 IST" name="HomePage" finished-at="2022-11-08T10:48:09 IST" duration-ms="7713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method signature="verifyUsername(java.lang.String)[pri:2, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:09 IST" name="verifyUsername" description="Username test case" finished-at="2022-11-08T10:48:10 IST" duration-ms="197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pranaygaikwadpatilgmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsername -->
+        <test-method signature="verifyPassword(java.lang.String)[pri:3, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:10 IST" name="verifyPassword" finished-at="2022-11-08T10:48:10 IST" depends-on-methods="Leetcode.LogIn.verifyUsername" duration-ms="130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranay@8988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassword -->
+        <test-method signature="SignIn()[pri:4, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:10 IST" name="SignIn" finished-at="2022-11-08T10:48:15 IST" depends-on-methods="Leetcode.LogIn.verifyPassword" duration-ms="5102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method signature="getsingpageTitle()[pri:5, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:15 IST" name="getsingpageTitle" finished-at="2022-11-08T10:48:15 IST" depends-on-methods="Leetcode.LogIn.SignIn" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Account Login - LeetCode] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Account Login - LeetCode] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Leetcode.LogIn.getsingpageTitle(LogIn.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsingpageTitle -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:Leetcode.LogIn@815b41f]" started-at="2022-11-08T10:48:15 IST" name="tearUp" finished-at="2022-11-08T10:48:18 IST" duration-ms="3226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- Leetcode.LogIn -->
+    </test> <!-- Test3 -->
+    <test started-at="2022-11-08T10:48:18 IST" name="Test4" finished-at="2022-11-08T10:48:43 IST" duration-ms="24379">
+      <class name="Leetcode.LogIn">
+        <test-method is-config="true" signature="browserStartup(java.lang.String)[pri:0, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:18 IST" name="browserStartup" finished-at="2022-11-08T10:48:26 IST" duration-ms="7804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStartup -->
+        <test-method signature="HomePage()[pri:1, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:26 IST" name="HomePage" finished-at="2022-11-08T10:48:34 IST" duration-ms="7622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method signature="verifyUsername(java.lang.String)[pri:2, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:34 IST" name="verifyUsername" description="Username test case" finished-at="2022-11-08T10:48:34 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pranaygaikwad5454@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsername -->
+        <test-method signature="verifyPassword(java.lang.String)[pri:3, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:34 IST" name="verifyPassword" finished-at="2022-11-08T10:48:34 IST" depends-on-methods="Leetcode.LogIn.verifyUsername" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranay@8988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassword -->
+        <test-method signature="SignIn()[pri:4, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:34 IST" name="SignIn" finished-at="2022-11-08T10:48:39 IST" depends-on-methods="Leetcode.LogIn.verifyPassword" duration-ms="5104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method signature="getsingpageTitle()[pri:5, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:39 IST" name="getsingpageTitle" finished-at="2022-11-08T10:48:39 IST" depends-on-methods="Leetcode.LogIn.SignIn" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Account Login - LeetCode] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Account Login - LeetCode] but found [(2) LeetCode - The World's Leading Online Programming Learning Platform]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Leetcode.LogIn.getsingpageTitle(LogIn.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsingpageTitle -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:Leetcode.LogIn@2f4948e4]" started-at="2022-11-08T10:48:39 IST" name="tearUp" finished-at="2022-11-08T10:48:43 IST" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- Leetcode.LogIn -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+</testng-results>

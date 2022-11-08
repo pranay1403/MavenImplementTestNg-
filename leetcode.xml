@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Listener.ListnerTestng"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="chrome"></parameter>
+  <parameter name="user" value="pranaygaikwadpatil@gmail.com"></parameter>
+  <parameter name="password" value="Pranay@8988"></parameter>
+    <classes>
+      <class name="Leetcode.LogIn"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2">
+  <parameter name="Browser" value="edge"></parameter>
+  <parameter name="user" value="pranaygaikwadpatil@gmail.com"></parameter>
+  <parameter name="password" value="Pranay@8988"></parameter>
+    <classes>
+      <class name="Leetcode.LogIn"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test3">
+  <parameter name="Browser" value="chrome"></parameter>
+  <parameter name="user" value="pranaygaikwadpatilgmail.com"></parameter>
+  <parameter name="password" value="Pranay@8988"></parameter>
+    <classes>
+      <class name="Leetcode.LogIn"/>
+    </classes>
+    </test> <!-- Test -->
+    <test thread-count="5" name="Test4">
+  <parameter name="Browser" value="chrome"></parameter>
+  <parameter name="user" value="pranaygaikwad5454@gmail.com"></parameter>
+  <parameter name="password" value="Pranay@8988"></parameter>
+    <classes>
+      <class name="Leetcode.LogIn"/>
+    </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
